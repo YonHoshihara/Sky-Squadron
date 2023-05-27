@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        rb.velocity = Vector3.up * speedModifier;
+        rb.velocity = new Vector3(0,0,1) * speedModifier;
     }
 
     private void OnTriggerEnter(Collider other)
