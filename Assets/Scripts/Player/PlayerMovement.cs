@@ -90,5 +90,13 @@ public class PlayerMovement : MonoBehaviour
         playerRb.velocity = swipeVelocity;
         StartCoroutine(ResetVeclocityTimer(applyVelocityTime));
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            EventManager.ReanchorObjectTrigger();
+        }
+    }
+
 }
