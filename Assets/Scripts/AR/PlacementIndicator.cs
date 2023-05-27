@@ -77,8 +77,8 @@ public class PlacementIndicator : MonoBehaviour
     {
         if (m_PlaneDetected)
         {
-           m_ObjectPlaced =  Instantiate(m_ObjectToPlace, m_CurrentPlacementIndicatorPose.position, 
-                m_CurrentPlacementIndicatorPose.rotation);
+           m_ObjectPlaced =  Instantiate(m_ObjectToPlace, m_CurrentPlacementIndicatorPose.position,
+              m_CurrentPlacementIndicatorPose.rotation);
         }
     }
 
